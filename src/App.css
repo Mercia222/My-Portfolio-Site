@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    padding-left: 30px;
+}
+
+.myLinks a {
+    padding-left: 20px; 
+}
+
+.social a{
+    padding: 10px;
+}
+
+header {
+    align-items: center;
+    padding: 10px 20px; 
+}
+
+header, #home, 
+.about-container, 
+.box-container {
+    display: flex; 
+    flex-direction: column;
+}
+
+header, .about-container, 
+.box-container{
+    justify-content: space-between;
+}
+
+#home {
+    background-color: rgba(238, 130, 238, 0.776);
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    height: 40vh;
+    color: white;
+    text-align: center;
+}
+
+.intro {
+width: 40%;
+margin-left: auto;
+margin-right: auto;
+
+}
+
+.about-container, 
+#projects {
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.bio {
+    width: 50%; 
+}
+
+.profile-image {
+  width: 46%;
+  justify-content: center;
+  display: flex;
+
+}
+
+.profile-image img {
+    width: 60%; 
+    border-radius: 50%;
+    margin: 0 auto; 
+}
+
+.box {
+    width: 30%; 
+    margin-top: 20px;
+    box-shadow: 2px 2px 2px 2px greenyellow;
+    padding: 10px;
+
+}
+
+.box img {
+    width: 100%; 
+    border-radius: 10px;
+    margin-bottom: 10px; 
+    height: 300px;
+}
+
+#projects p {
+    text-align: center;
+
+}
+
+#contact{
+    background-color: rgba(238, 130, 238, 0.776);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer{
+    background-color: rgba(0, 0, 0, 0.44);
+    color: white;
+    text-align: center;
+    padding: 20px;   
+}
+
+@media (max-width: 600px) {
+    .about-container, 
+    .box-container{
+        flex-direction: column;
+    }
+    
+    .box, .bio, 
+    .profile-image {
+        width: 100%;
+    }
+
+    .intro {
+        width: 100%;
+    }
+
+    .bio {
+        order: 2;
+    }
+}
