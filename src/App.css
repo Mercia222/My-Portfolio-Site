@@ -116,10 +116,16 @@ footer{
 
 @media (max-width: 600px) {
     .about-container, 
-    .box-container{
+    .box-container, 
+    header{
         flex-direction: column;
     }
     
+    .box {
+        margin-bottom: 12px;
+
+    }
+
     .box, .bio, 
     .profile-image {
         width: 100%;
